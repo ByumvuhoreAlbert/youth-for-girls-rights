@@ -345,7 +345,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../img/bg-breadcrumb.jpg);
+    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../img/mission.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -439,13 +439,14 @@
 
 /*** Service Start ***/
 .service .service-item {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .service .service-item .service-img {
     position: relative;
     overflow: hidden;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
 }
 
 .service .service-item .service-img img {
@@ -463,8 +464,8 @@
     height: 0;
     top: 0;
     left: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
     background: rgba(1, 95, 201, .2);
     transition: 0.5s;
     z-index: 1;

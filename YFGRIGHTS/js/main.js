@@ -197,3 +197,23 @@ document.querySelectorAll('.expand-btn').forEach(function(button) {
             }
         });
     });
+
+
+    document.querySelectorAll('.expand-btn').forEach(function(button) {
+        button.addEventListener('click', function() {
+            const aboutItem = this.closest('.about-item-content');
+            const shortAbout = aboutItem.querySelector('.short-about');
+            const fullAbout = aboutItem.querySelector('.full-about');
+
+            // Toggle between short and full content
+            if (fullAbout.style.display === 'none') {
+                fullAbout.style.display = 'block';
+                shortAbout.style.display = 'none';  // Hide short content
+                this.textContent = 'Show Less';       // Change button text
+            } else {
+                fullAbout.style.display = 'none';
+                shortAbout.style.display = 'block'; // Show short content again
+                this.textContent = 'Read More';       // Reset button text
+            }
+        });
+    });
